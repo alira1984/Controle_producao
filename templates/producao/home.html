@@ -1,0 +1,15 @@
+{% extends 'producao/base.html' %}
+{% block title %}Inserir Produção{% endblock %}
+
+{% block content %}
+<h2 class="mb-4 text-danger">Inserir dados produção</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+{% endblock %}
+
+
+
+
